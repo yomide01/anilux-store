@@ -50,21 +50,21 @@ const products = [
         id: 7,
         name: "Gold Hoops",
         category: "earrings",
-        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZmY4ODAwIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
+        image: "images/earring-gold.jpg",
         description: "Classic gold hoop earrings."
     },
     {
         id: 8,
         name: "Pearl Earrings",
         category: "earrings",
-        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZDEzMTNiIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+NszwvdGV4dD48L2c+PC9zdmc+",
+        image: "images/earring-pearl.jpg",
         description: "Freshwater pearl earrings."
     },
     {
         id: 9,
         name: "Diamond Studs",
         category: "earrings",
-        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZmI5NTUwIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2Q3NDI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
+        image: "images/earring-diamond.jpg",
         description: "Sparkling diamond studs."
     },
     // Watches (3)
