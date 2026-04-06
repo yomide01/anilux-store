@@ -1,28 +1,28 @@
-// Product Data - 4 categories: necklaces, rings, earrings, watches. Images match category & description.
+// Product Data - Verified working Unsplash images only
 const products = [
-    // Necklaces (3)
+    // Necklaces (3) - using same quality pearl necklace image (verified 200)
     {
         id: 1,
-        name: "Gold Necklace",
-        category: "necklaces",
-        image: "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?w=280&h=250&fit=crop",
-        description: "Quality gold-plated necklace."
-    },
-    {
-        id: 2,
         name: "Pearl Necklace",
         category: "necklaces",
         image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
         description: "Elegant pearl necklace."
     },
     {
+        id: 2,
+        name: "Gold Necklace",
+        category: "necklaces",
+        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
+        description: "Quality gold-plated necklace."
+    },
+    {
         id: 3,
         name: "Chain Necklace",
         category: "necklaces",
-        image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce3d1?w=280&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
         description: "Simple chain, everyday wear."
     },
-    // Rings (3)
+    // Rings (3) - two unique + one repeat
     {
         id: 4,
         name: "Gold Band Ring",
@@ -41,10 +41,10 @@ const products = [
         id: 6,
         name: "Silver Ring",
         category: "rings",
-        image: "https://images.unsplash.com/photo-1565123409695-30b4d95a8ee7?w=280&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=280&h=250&fit=crop",
         description: "Sterling silver design."
     },
-    // Earrings (3)
+    // Earrings (3) - two unique + one repeat
     {
         id: 7,
         name: "Gold Hoops",
@@ -54,19 +54,19 @@ const products = [
     },
     {
         id: 8,
-        name: "Diamond Studs",
-        category: "earrings",
-        image: "https://images.unsplash.com/photo-1617038260897-41a1e83e3a7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=250&q=80",
-        description: "Sparkling diamond studs."
-    },
-    {
-        id: 9,
         name: "Pearl Earrings",
         category: "earrings",
         image: "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=280&h=250&fit=crop",
         description: "Freshwater pearl earrings."
     },
-    // Watches (3) - using same quality watch image
+    {
+        id: 9,
+        name: "Diamond Studs",
+        category: "earrings",
+        image: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?w=280&h=250&fit=crop",
+        description: "Sparkling diamond studs."
+    },
+    // Watches (3) - all same verified watch
     {
         id: 10,
         name: "Classic Watch",
