@@ -323,12 +323,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
 }
 
-.product-price {
-    font-size: 1.5rem;
-    color: var(--gold);
-    font-weight: 600;
-    margin-bottom: 15px;
-}
+
 
 .order-btn {
     width: 100%;
