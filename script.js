@@ -66,26 +66,26 @@ const products = [
         image: "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=280&h=250&fit=crop",
         description: "Freshwater pearl earrings."
     },
-    // Watches (3)
+    // Watches (3) - using same quality watch image
     {
         id: 10,
         name: "Classic Watch",
         category: "watches",
-        image: "https://images.unsplash.com/photo-1523746823282-1dbd59336294?w=280&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=280&h=250&fit=crop",
         description: "Timeless classic watch."
     },
     {
         id: 11,
         name: "Modern Watch",
         category: "watches",
-        image: "https://images.unsplash.com/photo-1539877154373-5b79f92a7908?w=280&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=280&h=250&fit=crop",
         description: "Modern design watch."
     },
     {
         id: 12,
         name: "Leather Watch",
         category: "watches",
-        image: "https://images.unsplash.com/photo-1547996160-81dfa68839ef?w=280&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=280&h=250&fit=crop",
         description: "Leather strap watch."
     }
 ];
