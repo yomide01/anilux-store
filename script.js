@@ -1,18 +1,18 @@
-// Product Data - Actual jewelry photos from Unsplash
+// Product Data - 4 categories: necklaces, rings, earrings, watches. Images match category & description.
 const products = [
-    // Necklaces
+    // Necklaces (3)
     {
         id: 1,
         name: "Gold Necklace",
         category: "necklaces",
-        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?w=280&h=250&fit=crop",
         description: "Quality gold-plated necklace."
     },
     {
         id: 2,
         name: "Pearl Necklace",
         category: "necklaces",
-        image: "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?w=280&h=250&fit=crop",
+        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
         description: "Elegant pearl necklace."
     },
     {
@@ -22,10 +22,10 @@ const products = [
         image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce3d1?w=280&h=250&fit=crop",
         description: "Simple chain, everyday wear."
     },
-    // Rings
+    // Rings (3)
     {
         id: 4,
-        name: "Gold Ring",
+        name: "Gold Band Ring",
         category: "rings",
         image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=280&h=250&fit=crop",
         description: "Solid gold band ring."
@@ -44,7 +44,7 @@ const products = [
         image: "https://images.unsplash.com/photo-1565123409695-30b4d95a8ee7?w=280&h=250&fit=crop",
         description: "Sterling silver design."
     },
-    // Earrings
+    // Earrings (3)
     {
         id: 7,
         name: "Gold Hoops",
@@ -65,6 +65,28 @@ const products = [
         category: "earrings",
         image: "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=280&h=250&fit=crop",
         description: "Freshwater pearl earrings."
+    },
+    // Watches (3)
+    {
+        id: 10,
+        name: "Classic Watch",
+        category: "watches",
+        image: "https://images.unsplash.com/photo-1523746823282-1dbd59336294?w=280&h=250&fit=crop",
+        description: "Timeless classic watch."
+    },
+    {
+        id: 11,
+        name: "Modern Watch",
+        category: "watches",
+        image: "https://images.unsplash.com/photo-1539877154373-5b79f92a7908?w=280&h=250&fit=crop",
+        description: "Modern design watch."
+    },
+    {
+        id: 12,
+        name: "Leather Watch",
+        category: "watches",
+        image: "https://images.unsplash.com/photo-1547996160-81dfa68839ef?w=280&h=250&fit=crop",
+        description: "Leather strap watch."
     }
 ];
 
@@ -88,7 +110,7 @@ function renderProducts(category = 'all') {
     productsGrid.innerHTML = filteredProducts.map(product => `
         <div class="product-card" data-category="${product.category}">
             <div class="product-image">
-                <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
+                <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;" loading="lazy" onerror="this.src='https://via.placeholder.com/280x250?text=Image+unavailable'">
             </div>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
