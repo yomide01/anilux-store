@@ -1,100 +1,74 @@
-// Product Data
+// Product Data - Images only, no prices, simple names
 const products = [
     {
         id: 1,
-        name: "Golden Elegance Necklace",
+        name: "Gold Necklace",
         category: "necklaces",
-        price: "₦45,000",
-        description: "18k gold-plated necklace with cubic zirconia pendant. Perfect for special occasions.",
-        icon: "📿"
+        image: "images/necklace-1.jpg",
+        description: "Quality gold-plated necklace, ready to wear."
     },
     {
         id: 2,
-        name: "Royal Gold Chain",
+        name: "Classic Chain",
         category: "chains",
-        price: "₦38,500",
-        description: "Solid gold-filled link chain, 20 inches. Classic design for everyday luxury.",
-        icon: "⛓️"
+        image: "images/chain-1.jpg",
+        description: "Solid chain with a clean look."
     },
     {
         id: 3,
-        name: "Chronos Elite Watch",
+        name: "Simple Watch",
         category: "watches",
-        price: "₦120,000",
-        description: "Swiss movement luxury watch with leather strap. Water-resistant and timeless.",
-        icon: "⌚"
+        image: "images/watch-1.jpg",
+        description: "Everyday watch with clear dial."
     },
     {
         id: 4,
-        name: "Diamond Solitaire Ring",
+        name: "Elegant Ring",
         category: "rings",
-        price: "₦85,000",
-        description: "Sterling silver ring with brilliant-cut cubic zirconia solitaire.",
-        icon: "💍"
+        image: "images/ring-1.jpg",
+        description: "Stylish ring for any occasion."
     },
     {
         id: 5,
-        name: "Pearl Drop Earrings",
+        name: "Pearl Earrings",
         category: "earrings",
-        price: "₦22,000",
-        description: "Freshwater pearl studs with gold-plated accents. Elegant and delicate.",
-        icon: "💎"
+        image: "images/earring-1.jpg",
+        description: "Freshwater pearl studs, gold-tone."
     },
     {
         id: 6,
-        name: "Velvet Gold Choker",
+        name: "Layered Necklace",
         category: "necklaces",
-        price: "₦31,200",
-        description: "Adjustable velvet choker with gold-tone chain overlay. Bold statement piece.",
-        icon: "📿"
+        image: "images/necklace-2.jpg",
+        description: "Multi-layer necklace, adjustable."
     },
     {
         id: 7,
-        name: "Tennis Bracelet Chain",
+        name: "Figaro Chain",
         category: "chains",
-        price: "₦55,000",
-        description: "Delicate tennis-style bracelet chain. 7 inches, extendable to 8 inches.",
-        icon: "⛓️"
+        image: "images/chain-2.jpg",
+        description: "Classic Figaro pattern design."
     },
     {
         id: 8,
-        name: "Classic Date Watch",
+        name: "Leather Watch",
         category: "watches",
-        price: "₦95,000",
-        description: "Minimalist analog watch with genuine leather band. Weekday/date display.",
-        icon: "⌚"
+        image: "images/watch-2.jpg",
+        description: "Leather strap watch, minimalist face."
     },
     {
         id: 9,
-        name: "Signet Style Ring",
+        name: "Signet Ring",
         category: "rings",
-        price: "₦42,000",
-        description: "Victorian-style signet ring with engraved family crest design (customizable).",
-        icon: "💍"
+        image: "images/ring-2.jpg",
+        description: "Traditional signet style ring."
     },
     {
         id: 10,
-        name: "Hoops of Gold",
+        name: "Gold Hoops",
         category: "earrings",
-        price: "₦18,500",
-        description: "14k gold-plated hoop earrings, 1.5 inch diameter. Lightweight and comfortable.",
-        icon: "💎"
-    },
-    {
-        id: 11,
-        name: "Layered Pearl Necklace",
-        category: "necklaces",
-        price: "₦52,000",
-        description: "Multi-strand freshwater pearl necklace with gold clasp. Vintage-inspired.",
-        icon: "📿"
-    },
-    {
-        id: 12,
-        name: "Figaro Link Chain",
-        category: "chains",
-        price: "₦47,800",
-        description: "Classic Figaro pattern chain in yellow gold finish. Unisex design.",
-        icon: "⛓️"
+        image: "images/earring-2.jpg",
+        description: "Classic gold-plated hoop earrings."
     }
 ];
 
@@ -118,16 +92,15 @@ function renderProducts(category = 'all') {
     productsGrid.innerHTML = filteredProducts.map(product => `
         <div class="product-card" data-category="${product.category}">
             <div class="product-image">
-                ${product.icon}
+                <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;">
             </div>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-description">${product.description}</p>
-                <div class="product-price">${product.price}</div>
                 <button class="order-btn"
                         onclick="orderNow('${product.name}', '${product.category}')">
-                    Order via WhatsApp
+                    Inquire on WhatsApp
                 </button>
             </div>
         </div>
@@ -145,14 +118,12 @@ tabButtons.forEach(btn => {
 
 // Order via WhatsApp
 function orderNow(productName, category) {
-    const message = `Hi Anilux Store! I'm interested in ordering:
+    const message = `Hi Anilux Store! I'm interested in:
 
 *Product:* ${productName}
 *Category:* ${category}
 
-Please provide details on availability, pricing, and delivery options to my phone number.
-
-Thank you!`;
+Please send me details and photos of this item.`;
 
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
@@ -182,14 +153,12 @@ contactForm.addEventListener('submit', (e) => {
     const productInterest = document.getElementById('product-interest').value;
     const message = document.getElementById('message').value;
 
-    const whatsappMessage = `New Order Inquiry:
+    const whatsappMessage = `New inquiry:
 
 *Name:* ${name}
 *Phone:* ${phone}
 *Interested in:* ${productInterest}
-*Message:* ${message}
-
-Please contact me soon!`;
+*Message:* ${message}`;
 
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
@@ -199,7 +168,7 @@ Please contact me soon!`;
     // Show success feedback
     const submitBtn = contactForm.querySelector('.submit-btn');
     const originalText = submitBtn.textContent;
-    submitBtn.textContent = '✓ Message Sent!';
+    submitBtn.textContent = '✓ Sent!';
     submitBtn.style.background = '#28a745';
 
     setTimeout(() => {
@@ -245,6 +214,6 @@ window.addEventListener('scroll', () => {
 // Initialize
 renderProducts();
 
-console.log('Anilux Store - Premium Jewelry & Accessories');
+console.log('Anilux Store - Quality Accessories');
 console.log('WhatsApp:', WHATSAPP_NUMBER);
 console.log('Email:', EMAIL);
