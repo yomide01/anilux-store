@@ -1,47 +1,47 @@
-// Product Data - Real images from Unsplash, 3 categories: necklaces, rings, earrings
+// Product Data - Real images from loremflickr (jewelry photos)
 const products = [
     // Necklaces
     {
         id: 1,
         name: "Gold Necklace",
         category: "necklaces",
-        image: "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?w=280&h=250&fit=crop",
+        image: "https://loremflickr.com/280/250/necklace+gold?lock=1",
         description: "Quality gold-plated necklace."
     },
     {
         id: 2,
-        name: "Chain Necklace",
+        name: "Pearl Necklace",
         category: "necklaces",
-        image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce3d1?w=280&h=250&fit=crop",
-        description: "Simple chain, everyday wear."
+        image: "https://loremflickr.com/280/250/necklace+pearl?lock=2",
+        description: "Elegant pearl necklace."
     },
     {
         id: 3,
-        name: "Pearl Necklace",
+        name: "Chain Necklace",
         category: "necklaces",
-        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
-        description: "Elegant pearl necklace."
+        image: "https://loremflickr.com/280/250/necklace+chain?lock=3",
+        description: "Simple chain, everyday wear."
     },
     // Rings
     {
         id: 4,
         name: "Gold Ring",
         category: "rings",
-        image: "https://images.unsplash.com/photo-1605100804763-f24764bcd607?w=280&h=250&fit=crop",
+        image: "https://loremflickr.com/280/250/ring+gold?lock=4",
         description: "Solid gold band ring."
     },
     {
         id: 5,
         name: "Diamond Ring",
         category: "rings",
-        image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=280&h=250&fit=crop",
+        image: "https://loremflickr.com/280/250/ring+diamond?lock=5",
         description: "Elegant diamond ring."
     },
     {
         id: 6,
         name: "Silver Ring",
         category: "rings",
-        image: "https://images.unsplash.com/photo-1532257568119-1493e7554f56?w=280&h=250&fit=crop",
+        image: "https://loremflickr.com/280/250/ring+silver?lock=6",
         description: "Sterling silver design."
     },
     // Earrings
@@ -49,21 +49,21 @@ const products = [
         id: 7,
         name: "Gold Hoops",
         category: "earrings",
-        image: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?w=280&h=250&fit=crop",
+        image: "https://loremflickr.com/280/250/earring+hoop?lock=7",
         description: "Classic gold hoop earrings."
     },
     {
         id: 8,
         name: "Diamond Studs",
         category: "earrings",
-        image: "https://images.unsplash.com/photo-1617038260897-41a1e83e3a7d?w=280&h=250&fit=crop",
+        image: "https://loremflickr.com/280/250/earring+stud?lock=8",
         description: "Sparkling diamond studs."
     },
     {
         id: 9,
         name: "Pearl Earrings",
         category: "earrings",
-        image: "https://images.unsplash.com/photo-1629228188167-505f99d9226a?w=280&h=250&fit=crop",
+        image: "https://loremflickr.com/280/250/earring+pearl?lock=9",
         description: "Freshwater pearl earrings."
     }
 ];
