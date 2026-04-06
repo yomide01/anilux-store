@@ -1,67 +1,70 @@
-// Product Data - 3 categories: necklaces, rings, earrings
+// Product Data - Real images from Unsplash, 3 categories: necklaces, rings, earrings
 const products = [
+    // Necklaces
     {
         id: 1,
         name: "Gold Necklace",
         category: "necklaces",
-        image: "https://placehold.co/280x250/d4af37/white?text=Necklace",
+        image: "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?w=280&h=250&fit=crop",
         description: "Quality gold-plated necklace."
     },
     {
         id: 2,
-        name: "Layered Necklace",
+        name: "Chain Necklace",
         category: "necklaces",
-        image: "https://placehold.co/280x250/b8860b/white?text=Necklace",
-        description: "Multi-layer design, adjustable."
+        image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce3d1?w=280&h=250&fit=crop",
+        description: "Simple chain, everyday wear."
     },
     {
         id: 3,
-        name: "Choker Necklace",
+        name: "Pearl Necklace",
         category: "necklaces",
-        image: "https://placehold.co/280x250/daa520/white?text=Necklace",
-        description: "Simple choker, everyday wear."
+        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
+        description: "Elegant pearl necklace."
     },
+    // Rings
     {
         id: 4,
-        name: "Elegant Ring",
+        name: "Gold Ring",
         category: "rings",
-        image: "https://placehold.co/280x250/b8941e/white?text=Ring",
-        description: "Stylish ring for any occasion."
+        image: "https://images.unsplash.com/photo-1605100804763-f24764bcd607?w=280&h=250&fit=crop",
+        description: "Solid gold band ring."
     },
     {
         id: 5,
-        name: "Signet Ring",
+        name: "Diamond Ring",
         category: "rings",
-        image: "https://placehold.co/280x250/c0c0c0/333333?text=Ring",
-        description: "Traditional signet style."
+        image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=280&h=250&fit=crop",
+        description: "Elegant diamond ring."
     },
     {
         id: 6,
-        name: "Gold Band",
+        name: "Silver Ring",
         category: "rings",
-        image: "https://placehold.co/280x250/ffd700/333333?text=Ring",
-        description: "Solid gold band, minimalist."
+        image: "https://images.unsplash.com/photo-1532257568119-1493e7554f56?w=280&h=250&fit=crop",
+        description: "Sterling silver design."
     },
+    // Earrings
     {
         id: 7,
-        name: "Pearl Earrings",
+        name: "Gold Hoops",
         category: "earrings",
-        image: "https://placehold.co/280x250/e8e8e8/333333?text=Earrings",
-        description: "Freshwater pearl studs."
+        image: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?w=280&h=250&fit=crop",
+        description: "Classic gold hoop earrings."
     },
     {
         id: 8,
-        name: "Gold Hoops",
+        name: "Diamond Studs",
         category: "earrings",
-        image: "https://placehold.co/280x250/daa520/white?text=Earrings",
-        description: "Classic gold-plated hoops."
+        image: "https://images.unsplash.com/photo-1617038260897-41a1e83e3a7d?w=280&h=250&fit=crop",
+        description: "Sparkling diamond studs."
     },
     {
         id: 9,
-        name: "Drop Earrings",
+        name: "Pearl Earrings",
         category: "earrings",
-        image: "https://placehold.co/280x250/f0e68c/333333?text=Earrings",
-        description: "Gentle drop style, elegant."
+        image: "https://images.unsplash.com/photo-1629228188167-505f99d9226a?w=280&h=250&fit=crop",
+        description: "Freshwater pearl earrings."
     }
 ];
 
@@ -85,7 +88,7 @@ function renderProducts(category = 'all') {
     productsGrid.innerHTML = filteredProducts.map(product => `
         <div class="product-card" data-category="${product.category}">
             <div class="product-image">
-                <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;">
+                <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;" loading="lazy">
             </div>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
