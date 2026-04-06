@@ -98,10 +98,6 @@ function renderProducts(category = 'all') {
                 <div class="product-category">${product.category}</div>
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-description">${product.description}</p>
-                <button class="order-btn"
-                        onclick="orderNow('${product.name}', '${product.category}')">
-                    Inquire on WhatsApp
-                </button>
             </div>
         </div>
     `).join('');
@@ -126,20 +122,6 @@ tabButtons.forEach(btn => {
         renderProducts(btn.dataset.category);
     });
 });
-
-// Order via WhatsApp
-function orderNow(productName, category) {
-    const message = `Hi Anilux Store! I'm interested in:
-
-*Product:* ${productName}
-*Category:* ${category}
-
-Please send me details and photos of this item.`;
-
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
-    window.open(whatsappURL, '_blank');
-}
 
 // Mobile Menu Toggle
 if (mobileMenuBtn) {
