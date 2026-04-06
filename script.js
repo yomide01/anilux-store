@@ -6,21 +6,21 @@ const products = [
         id: 1,
         name: "Gold Necklace",
         category: "necklaces",
-        image: "images/necklaces/necklace-gold.jpg",
+        image: "images/necklace-gold.jpg",
         description: "Quality gold-plated necklace."
     },
     {
         id: 2,
         name: "Silver Necklace",
         category: "necklaces",
-        image: "images/necklaces/necklace-silver.jpg",
+        image: "images/necklace-silver.jpg",
         description: "Elegant silver necklace."
     },
     {
         id: 3,
         name: "Chain Necklace",
         category: "necklaces",
-        image: "images/necklaces/necklace-chain.jpg",
+        image: "images/necklace-chain.jpg",
         description: "Simple chain, everyday wear."
     },
     // Rings (3)
@@ -28,21 +28,21 @@ const products = [
         id: 4,
         name: "Gold Band Ring",
         category: "rings",
-        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZmY4ODAwIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VuU8L3RleHQ+PC9nPjwvc3ZnPg==",
+        image: "images/ring-gold.jpg",
         description: "Solid gold band ring."
     },
     {
         id: 5,
         name: "Diamond Ring",
         category: "rings",
-        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZmI5NTUwIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2Q3NDI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
+        image: "images/ring-diamond.jpg",
         description: "Elegant diamond ring."
     },
     {
         id: 6,
         name: "Silver Ring",
         category: "rings",
-        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjE1NjIwIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
+        image: "images/ring-silver.jpg",
         description: "Sterling silver design."
     },
     // Earrings (3)
