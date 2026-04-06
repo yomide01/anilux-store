@@ -1,25 +1,25 @@
-// Product Data - Real images from loremflickr (jewelry photos)
+// Product Data - Actual jewelry photos from Unsplash
 const products = [
     // Necklaces
     {
         id: 1,
         name: "Gold Necklace",
         category: "necklaces",
-        image: "https://loremflickr.com/280/250/necklace+gold?lock=1",
+        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
         description: "Quality gold-plated necklace."
     },
     {
         id: 2,
         name: "Pearl Necklace",
         category: "necklaces",
-        image: "https://loremflickr.com/280/250/necklace+pearl?lock=2",
+        image: "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?w=280&h=250&fit=crop",
         description: "Elegant pearl necklace."
     },
     {
         id: 3,
         name: "Chain Necklace",
         category: "necklaces",
-        image: "https://loremflickr.com/280/250/necklace+chain?lock=3",
+        image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce3d1?w=280&h=250&fit=crop",
         description: "Simple chain, everyday wear."
     },
     // Rings
@@ -27,21 +27,21 @@ const products = [
         id: 4,
         name: "Gold Ring",
         category: "rings",
-        image: "https://loremflickr.com/280/250/ring+gold?lock=4",
+        image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=280&h=250&fit=crop",
         description: "Solid gold band ring."
     },
     {
         id: 5,
         name: "Diamond Ring",
         category: "rings",
-        image: "https://loremflickr.com/280/250/ring+diamond?lock=5",
+        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=280&h=250&fit=crop",
         description: "Elegant diamond ring."
     },
     {
         id: 6,
         name: "Silver Ring",
         category: "rings",
-        image: "https://loremflickr.com/280/250/ring+silver?lock=6",
+        image: "https://images.unsplash.com/photo-1565123409695-30b4d95a8ee7?w=280&h=250&fit=crop",
         description: "Sterling silver design."
     },
     // Earrings
@@ -49,21 +49,21 @@ const products = [
         id: 7,
         name: "Gold Hoops",
         category: "earrings",
-        image: "https://loremflickr.com/280/250/earring+hoop?lock=7",
+        image: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?w=280&h=250&fit=crop",
         description: "Classic gold hoop earrings."
     },
     {
         id: 8,
         name: "Diamond Studs",
         category: "earrings",
-        image: "https://loremflickr.com/280/250/earring+stud?lock=8",
+        image: "https://images.unsplash.com/photo-1617038260897-41a1e83e3a7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=280&h=250&q=80",
         description: "Sparkling diamond studs."
     },
     {
         id: 9,
         name: "Pearl Earrings",
         category: "earrings",
-        image: "https://loremflickr.com/280/250/earring+pearl?lock=9",
+        image: "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=280&h=250&fit=crop",
         description: "Freshwater pearl earrings."
     }
 ];
@@ -88,7 +88,7 @@ function renderProducts(category = 'all') {
     productsGrid.innerHTML = filteredProducts.map(product => `
         <div class="product-card" data-category="${product.category}">
             <div class="product-image">
-                <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+                <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;" loading="lazy" onerror="this.style.display='none'">
             </div>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
