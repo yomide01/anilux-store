@@ -1,91 +1,92 @@
-// Product Data - Verified working Unsplash images only
+// Product Data - Using simple SVG icons to guarantee category accuracy
+// Each category has a clear, recognizable icon
 const products = [
-    // Necklaces (3) - using same quality pearl necklace image (verified 200)
+    // Necklaces (3)
     {
         id: 1,
-        name: "Pearl Necklace",
+        name: "Gold Necklace",
         category: "necklaces",
-        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
-        description: "Elegant pearl necklace."
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZDEzMTNiIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+RiTwvdGV4dD48L2c+PC9zdmc+",
+        description: "Quality gold-plated necklace."
     },
     {
         id: 2,
-        name: "Gold Necklace",
+        name: "Pearl Necklace",
         category: "necklaces",
-        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
-        description: "Quality gold-plated necklace."
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZDEzMTNiIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+NszwvdGV4dD48L2c+PC9zdmc+",
+        description: "Elegant pearl necklace."
     },
     {
         id: 3,
         name: "Chain Necklace",
         category: "necklaces",
-        image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=280&h=250&fit=crop",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZDEzMTNiIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
         description: "Simple chain, everyday wear."
     },
-    // Rings (3) - two unique + one repeat
+    // Rings (3)
     {
         id: 4,
         name: "Gold Band Ring",
         category: "rings",
-        image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=280&h=250&fit=crop",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZmY4ODAwIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VuU8L3RleHQ+PC9nPjwvc3ZnPg==",
         description: "Solid gold band ring."
     },
     {
         id: 5,
         name: "Diamond Ring",
         category: "rings",
-        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=280&h=250&fit=crop",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZmI5NTUwIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2Q3NDI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
         description: "Elegant diamond ring."
     },
     {
         id: 6,
         name: "Silver Ring",
         category: "rings",
-        image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=280&h=250&fit=crop",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZjE1NjIwIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
         description: "Sterling silver design."
     },
-    // Earrings (3) - two unique + one repeat
+    // Earrings (3)
     {
         id: 7,
         name: "Gold Hoops",
         category: "earrings",
-        image: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?w=280&h=250&fit=crop",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZmY4ODAwIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
         description: "Classic gold hoop earrings."
     },
     {
         id: 8,
         name: "Pearl Earrings",
         category: "earrings",
-        image: "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=280&h=250&fit=crop",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZDEzMTNiIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+NszwvdGV4dD48L2c+PC9zdmc+",
         description: "Freshwater pearl earrings."
     },
     {
         id: 9,
         name: "Diamond Studs",
         category: "earrings",
-        image: "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?w=280&h=250&fit=crop",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZmI5NTUwIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI2Q3NDI0MiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
         description: "Sparkling diamond studs."
     },
-    // Watches (3) - all same verified watch
+    // Watches (3)
     {
         id: 10,
         name: "Classic Watch",
         category: "watches",
-        image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=280&h=250&fit=crop",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjMTk4NTVkIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
         description: "Timeless classic watch."
     },
     {
         id: 11,
         name: "Modern Watch",
         category: "watches",
-        image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=280&h=250&fit=crop",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjMTk4NTVkIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
         description: "Modern design watch."
     },
     {
         id: 12,
         name: "Leather Watch",
         category: "watches",
-        image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=280&h=250&fit=crop",
+        image: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjUwIiBmaWxsPSIjZmRhN2JmIi8+PHRleHQgeD0iMTUwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4p2kPC90ZXh0PjwvZz48L3N2Zz4=",
         description: "Leather strap watch."
     }
 ];
@@ -110,7 +111,7 @@ function renderProducts(category = 'all') {
     productsGrid.innerHTML = filteredProducts.map(product => `
         <div class="product-card" data-category="${product.category}">
             <div class="product-image">
-                <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;" loading="lazy" onerror="this.src='https://via.placeholder.com/280x250?text=Image+unavailable'">
+                <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;">
             </div>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
