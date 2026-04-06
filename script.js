@@ -1,25 +1,25 @@
-// Product Data - Using actual images (placeholder service), no prices
+// Product Data - 3 categories: necklaces, rings, earrings
 const products = [
     {
         id: 1,
         name: "Gold Necklace",
         category: "necklaces",
         image: "https://placehold.co/280x250/d4af37/white?text=Necklace",
-        description: "Quality gold-plated necklace, ready to wear."
+        description: "Quality gold-plated necklace."
     },
     {
         id: 2,
-        name: "Classic Chain",
-        category: "chains",
-        image: "https://placehold.co/280x250/4a4a4a/white?text=Chain",
-        description: "Solid chain with a clean look."
+        name: "Layered Necklace",
+        category: "necklaces",
+        image: "https://placehold.co/280x250/b8860b/white?text=Necklace",
+        description: "Multi-layer design, adjustable."
     },
     {
         id: 3,
-        name: "Simple Watch",
-        category: "watches",
-        image: "https://placehold.co/280x250/2c2c2c/white?text=Watch",
-        description: "Everyday watch with clear dial."
+        name: "Choker Necklace",
+        category: "necklaces",
+        image: "https://placehold.co/280x250/daa520/white?text=Necklace",
+        description: "Simple choker, everyday wear."
     },
     {
         id: 4,
@@ -30,45 +30,38 @@ const products = [
     },
     {
         id: 5,
-        name: "Pearl Earrings",
-        category: "earrings",
-        image: "https://placehold.co/280x250/e8e8e8/333333?text=Earrings",
-        description: "Freshwater pearl studs, gold-tone."
-    },
-    {
-        id: 6,
-        name: "Layered Necklace",
-        category: "necklaces",
-        image: "https://placehold.co/280x250/8b6914/white?text=Necklace",
-        description: "Multi-layer necklace, adjustable."
-    },
-    {
-        id: 7,
-        name: "Figaro Chain",
-        category: "chains",
-        image: "https://placehold.co/280x250/3d3d3d/white?text=Chain",
-        description: "Classic Figaro pattern design."
-    },
-    {
-        id: 8,
-        name: "Leather Watch",
-        category: "watches",
-        image: "https://placehold.co/280x250/5c4033/white?text=Watch",
-        description: "Leather strap watch, minimalist face."
-    },
-    {
-        id: 9,
         name: "Signet Ring",
         category: "rings",
         image: "https://placehold.co/280x250/c0c0c0/333333?text=Ring",
-        description: "Traditional signet style ring."
+        description: "Traditional signet style."
     },
     {
-        id: 10,
+        id: 6,
+        name: "Gold Band",
+        category: "rings",
+        image: "https://placehold.co/280x250/ffd700/333333?text=Ring",
+        description: "Solid gold band, minimalist."
+    },
+    {
+        id: 7,
+        name: "Pearl Earrings",
+        category: "earrings",
+        image: "https://placehold.co/280x250/e8e8e8/333333?text=Earrings",
+        description: "Freshwater pearl studs."
+    },
+    {
+        id: 8,
         name: "Gold Hoops",
         category: "earrings",
         image: "https://placehold.co/280x250/daa520/white?text=Earrings",
-        description: "Classic gold-plated hoop earrings."
+        description: "Classic gold-plated hoops."
+    },
+    {
+        id: 9,
+        name: "Drop Earrings",
+        category: "earrings",
+        image: "https://placehold.co/280x250/f0e68c/333333?text=Earrings",
+        description: "Gentle drop style, elegant."
     }
 ];
 

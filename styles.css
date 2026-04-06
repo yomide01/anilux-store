@@ -343,6 +343,26 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--black);
 }
 
+/* More Products CTA */
+.more-products-cta {
+    padding: 60px 0;
+    background: var(--black);
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.more-products-cta p {
+    font-size: 1.2rem;
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.more-products-cta strong {
+    color: var(--gold);
+}
+
 /* About Section */
 .about {
     padding: 100px 0;
