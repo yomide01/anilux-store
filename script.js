@@ -79,7 +79,7 @@ const products = [
         id: 11,
         name: "Modern Watch",
         category: "watches",
-        image: "images/watch-classic.jpg",
+        image: "images/watch-modern.jpg",
         description: "Modern design watch."
     },
     {
