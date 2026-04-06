@@ -1,73 +1,73 @@
-// Product Data - Images only, no prices, simple names
+// Product Data - No external images, use styled placeholders
 const products = [
     {
         id: 1,
         name: "Gold Necklace",
         category: "necklaces",
-        image: "images/necklace-1.jpg",
+        color: "linear-gradient(135deg, #d4af37 0%, #f4e5b2 50%, #d4af37 100%)",
         description: "Quality gold-plated necklace, ready to wear."
     },
     {
         id: 2,
         name: "Classic Chain",
         category: "chains",
-        image: "images/chain-1.jpg",
+        color: "linear-gradient(135deg, #2c2c2c 0%, #4a4a4a 50%, #2c2c2c 100%)",
         description: "Solid chain with a clean look."
     },
     {
         id: 3,
         name: "Simple Watch",
         category: "watches",
-        image: "images/watch-1.jpg",
+        color: "linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 50%, #1a1a1a 100%)",
         description: "Everyday watch with clear dial."
     },
     {
         id: 4,
         name: "Elegant Ring",
         category: "rings",
-        image: "images/ring-1.jpg",
+        color: "linear-gradient(135deg, #b8941e 0%, #d4af37 50%, #b8941e 100%)",
         description: "Stylish ring for any occasion."
     },
     {
         id: 5,
         name: "Pearl Earrings",
         category: "earrings",
-        image: "images/earring-1.jpg",
+        color: "linear-gradient(135deg, #e8e8e8 0%, #ffffff 50%, #e8e8e8 100%)",
         description: "Freshwater pearl studs, gold-tone."
     },
     {
         id: 6,
         name: "Layered Necklace",
         category: "necklaces",
-        image: "images/necklace-2.jpg",
+        color: "linear-gradient(135deg, #8b6914 0%, #d4af37 50%, #8b6914 100%)",
         description: "Multi-layer necklace, adjustable."
     },
     {
         id: 7,
         name: "Figaro Chain",
         category: "chains",
-        image: "images/chain-2.jpg",
+        color: "linear-gradient(135deg, #3d3d3d 0%, #5a5a5a 50%, #3d3d3d 100%)",
         description: "Classic Figaro pattern design."
     },
     {
         id: 8,
         name: "Leather Watch",
         category: "watches",
-        image: "images/watch-2.jpg",
+        color: "linear-gradient(135deg, #5c4033 0%, #8b7355 50%, #5c4033 100%)",
         description: "Leather strap watch, minimalist face."
     },
     {
         id: 9,
         name: "Signet Ring",
         category: "rings",
-        image: "images/ring-2.jpg",
+        color: "linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 50%, #c0c0c0 100%)",
         description: "Traditional signet style ring."
     },
     {
         id: 10,
         name: "Gold Hoops",
         category: "earrings",
-        image: "images/earring-2.jpg",
+        color: "linear-gradient(135deg, #daa520 0%, #ffd700 50%, #daa520 100%)",
         description: "Classic gold-plated hoop earrings."
     }
 ];
@@ -91,8 +91,8 @@ function renderProducts(category = 'all') {
 
     productsGrid.innerHTML = filteredProducts.map(product => `
         <div class="product-card" data-category="${product.category}">
-            <div class="product-image">
-                <img src="${product.image}" alt="${product.name}" style="width:100%; height:100%; object-fit:cover;">
+            <div class="product-image" style="background: ${product.color};">
+                <div class="placeholder-icon">${getCategoryIcon(product.category)}</div>
             </div>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
@@ -105,6 +105,17 @@ function renderProducts(category = 'all') {
             </div>
         </div>
     `).join('');
+}
+
+function getCategoryIcon(category) {
+    const icons = {
+        necklaces: '📿',
+        chains: '⛓️',
+        watches: '⌚',
+        rings: '💍',
+        earrings: '💎'
+    };
+    return icons[category] || '💎';
 }
 
 // Category Tab Switching
